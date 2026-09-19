@@ -12,11 +12,11 @@ class HelloCodiva {
     do{
         System.out.println("Digite uma nota (Para finalizar digite um número negativo. Ex: -1.):");
         nota = input.nextInt();
-        if(nota > 0){
+        if(nota >= 0){
             media = media+nota;
             quantidade++;
         }
-    }while(nota > 0);
+    }while(nota >= 0);
     
     media = media/quantidade;
     System.out.println("Quantidade de notas inseridas: " + quantidade);
