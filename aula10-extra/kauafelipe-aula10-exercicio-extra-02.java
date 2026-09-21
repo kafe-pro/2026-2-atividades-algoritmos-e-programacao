@@ -13,7 +13,7 @@ class HelloCodiva {
 
     do{
         System.out.println("Qual imagem você deseja imprimir?");
-        System.out.println("\n\"1 - TODAS.\"" + "\n\"2 - Imagem 1.\"" + "\n\"3 - Imagem 2.\"" + "\n\"4 - Imagem 4.\"" + "\n\"5 - Imagem 4.\"" + "\n\"6 - Imagem 5.\"" + "\n\"0 - Sair.\"");
+        System.out.println("\n\"1 - TODAS.\"" + "\n\"2 - Imagem 1.\"" + "\n\"3 - Imagem 2.\"" + "\n\"4 - Imagem 3.\"" + "\n\"5 - Imagem 4.\"" + "\n\"6 - Imagem 5.\"" + "\n\"0 - Sair.\"");
         imagens = input.nextInt();
         
         if(imagens > 0 && imagens < 7){
