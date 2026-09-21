@@ -168,7 +168,7 @@ class HelloCodiva {
                 System.out.println("\nValor inválido!\n");
             }
         }
-        else{
+        else if(imagens < 0 || imagens > 6){
             System.out.println("\nOpção inválida!\n");
         }
     }while(imagens != 0);

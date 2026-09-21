@@ -9,7 +9,7 @@ class HelloCodiva {
     int menu;
     double recarga;
 
-    System.out.println("TechPhone: Iniciando autoatendimento.\n");
+    System.out.println("TechPhone: Iniciando autoatendimento.");
 
     do{
         System.out.println("\n1 - Consultar Saldo / Status\n" + "2 - Recarregar / Adicionar Créditos\n" + "3 - Falar com Atendente\n" + "0 - Sair do Sistema");
