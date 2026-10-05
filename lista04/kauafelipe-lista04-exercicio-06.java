@@ -7,11 +7,11 @@ class HelloCodiva {
 
     Scanner input = new Scanner(System.in);
 
-    ArrayList<Int> numerosErrados = new ArrayList<>();
+    ArrayList<Integer> numerosErrados = new ArrayList<>();
     int numeroSecreto = 42;
     int numero = 0;
-    int tentativas;
-    int contador;
+    int tentativas = 1;
+    int contador = 1;
 
     do{
         System.out.println("Digite um número:");
@@ -31,7 +31,10 @@ class HelloCodiva {
 
     for(int print : numerosErrados){
         System.out.println(contador + ") " + print);
+        contador++;
     }
+
+    System.out.println(contador + ") " + 42);
 
     }  
 }
