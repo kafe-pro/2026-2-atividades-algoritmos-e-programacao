@@ -11,7 +11,7 @@ class HelloCodiva {
     double media = 0;
 
     for(int i = 0 ; i < faturamento.length ; i++){
-        System.out.println("Digite o faturamento do dia (" + i + "/5)");
+        System.out.println("Digite o faturamento do dia (" + (i+1) + "/5)");
         faturamento[i] = input.nextDouble();
     }
 

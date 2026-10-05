@@ -6,33 +6,31 @@ class HelloCodiva {
 
     Scanner input = new Scanner(System.in);
 
-    double[] faturamento = new double[5];
-    double faturamentoTotal = 0;
-    double media = 0;
+    double[] pesoCaixa = new double[6];
+    double pesoRef = 0;
+    int quantidadePeso = 0;
 
-    for(int i = 0 ; i < faturamento.length ; i++){
-        System.out.println("Digite o faturamento do dia (" + i + "/5)");
-        faturamento[i] = input.nextDouble();
+    for(int i = 0 ; i < pesoCaixa.length ; i++){
+        System.out.println("Digite o peso da caixa (" + i + "/6)");
+        pesoCaixa[i] = input.nextDouble();
     }
 
-    System.out.println("");
+    System.out.println("-------------------------");
+    System.out.println("Digite um peso de referência:");
+    pesoRef = input.nextDouble();
 
-    for(int i = 0 ; i < faturamento.length ; i++){
-        faturamentoTotal += faturamento[i];
-
-        System.out.println("Faturamento do dia " + (i+1) + ": " + faturamento[i]);
-    }
-
-    media = faturamentoTotal / faturamento.length;
-
-    System.out.println("\nFaturamento total da semana: " + faturamentoTotal);
-    System.out.println("Faturamento médio da semana: " + media + "\n");
-
-    for(int i = 0 ; i < faturamento.length ; i++){
-        if (faturamento[i] < media){
-        System.out.println("Faturamento abaixo da média registrado no dia " + (i+1) + ": " + faturamento[i]);
+    for(int i = 0 ; i < pesoCaixa.length ; i++){
+        if (pesoRef == pesoCaixa[i]){
+            quantidadePeso++;
         }
-        
+    }
+
+    System.out.println("-------------------------");
+    if (quantidadePeso > 0){
+        System.out.println("O peso de referência foi encontrado " + quantidadePeso + " vezes.");
+    }
+    else{
+        System.out.println("Valor não localizado na amostragem.");
     }
 
     }  
